@@ -1,0 +1,26 @@
+﻿.app-head {
+    padding: 100px;
+    text-align: center;
+    background: #3A435D;
+    color: #fff;
+}
+
+.app-menu {
+    height: 55px;
+}
+
+    .app-menu .header  {
+        margin-left: 0;
+        padding-left: 0;
+    }
+
+    .app-container {
+      padding: 50px;
+      max-width: 80%;
+      margin: 0 auto;
+    }
+
+    .app-container-header {
+      margin-bottom: 50px !important;
+    }
+   

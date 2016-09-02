@@ -1,0 +1,20 @@
+﻿@Master['Master']
+
+@Section['Content']
+<div class="app-container">
+    <h3 class="ui center aligned header app-container-header">
+        Categories
+    </h3>
+
+    <div class="ui very relaxed horizontal list">
+        @Each
+            <div class="big item">
+                <img class="ui mini image" src="@Current.IconUrl">
+                <div class="content">
+                    <div class="header"><a href="/Topic/@Current.Slug">@Current.Name</a></div>
+                </div>
+            </div>
+        @EndEach
+    </div>
+</div>
+@EndSection

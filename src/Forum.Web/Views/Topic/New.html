@@ -1,0 +1,29 @@
+﻿@Master['Master']
+
+@Section['Content']
+
+<h3>New</h3>
+
+<form action="/Topic/Save" method="post" class="ui form">
+    <div class="field">
+        <input type="text" name="title">
+    </div>
+
+    <div class="field">
+        <textarea id="newTopic" name="content"></textarea>
+    </div>
+
+    <input type="hidden" name="CategoryID" value="@ViewBag.CategorySlug" />
+    <button class="ui submit button">Submit</button>
+</form>
+
+
+<script>
+    var simplemde = new SimpleMDE({
+        element: document.getElementById("newTopic"),
+        status: false,
+    });
+</script>
+
+@EndSection
+

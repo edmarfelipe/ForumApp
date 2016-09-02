@@ -1,0 +1,106 @@
+﻿* Página Inicial
+
+Texto Hero com Barra de pesquisa embaixo a lista de categorias disponiveis.
+
+* Página Novo Topico
+
+* Página com lista de Topicos
+
+* Página com o conteudo do Topico
+
+www.dropboxforum.com
+
+
+<div class="ui grid">
+    <div class="column four wide">
+      <div class="ui middle aligned selection list">
+        <div class="item">
+          <img class="ui mini image" src="http://image.flaticon.com/icons/svg/123/123495.svg">
+          <div class="content">
+            <div class="header">Soccer</div>
+          </div>
+        </div>
+        <div class="item">
+          <img class="ui mini image" src="http://image.flaticon.com/icons/svg/123/123520.svg">
+          <div class="content">
+            <div class="header">Basketball</div>
+          </div>
+        </div>
+        <div class="item">
+          <img class="ui mini image" src="http://image.flaticon.com/icons/svg/123/123510.svg">
+          <div class="content">
+            <div class="header">Volleyball</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="column four wide">
+      <div class="ui middle aligned selection list">
+        <div class="item">
+          <img class="ui mini image" src="http://image.flaticon.com/icons/svg/123/123505.svg">
+          <div class="content">
+            <div class="header">Cycling</div>
+          </div>
+        </div>
+        <div class="item">
+          <img class="ui mini image" src="http://image.flaticon.com/icons/svg/123/123500.svg">
+          <div class="content">
+            <div class="header">Running</div>
+          </div>
+        </div>
+        <div class="item">
+          <img class="ui mini image" src="http://image.flaticon.com/icons/svg/123/123501.svg">
+          <div class="content">
+            <div class="header">Weightlifting</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="column four wide">
+      <div class="ui middle aligned selection list">
+        <div class="item">
+          <img class="ui mini image" src="http://image.flaticon.com/icons/svg/123/123511.svg">
+          <div class="content">
+            <div class="header">Archery</div>
+          </div>
+        </div>
+        <div class="item">
+          <img class="ui mini image" src="http://image.flaticon.com/icons/svg/123/123528.svg">
+          <div class="content">
+            <div class="header">Climbing</div>
+          </div>
+        </div>
+        <div class="item">
+          <img class="ui mini image" src="http://image.flaticon.com/icons/svg/123/123508.svg">
+          <div class="content">
+            <div class="header">Fencing</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="column four wide">
+      <div class="ui middle aligned selection list">
+        <div class="item">
+          <img class="ui mini image" src="http://image.flaticon.com/icons/svg/123/123498.svg">
+          <div class="content">
+            <div class="header">Rowing</div>
+          </div>
+        </div>
+        <div class="item">
+          <img class="ui mini image" src="http://image.flaticon.com/icons/svg/123/123540.svg">
+          <div class="content">
+            <div class="header">Sailing</div>
+          </div>
+        </div>
+        <div class="item">
+          <img class="ui mini image" src="http://image.flaticon.com/icons/svg/123/123503.svg">
+          <div class="content">
+            <div class="header">Swimming</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>

@@ -5,7 +5,9 @@ VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{C02CDF38-010A-4CEA-B3F3-741F1A314AFA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ForumApp", "src\ForumApp\ForumApp.csproj", "{35460AA4-B94A-4B64-9418-7243EC3D2F01}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Forum.Infrastructure", "src\Forum.Infrastructure\Forum.Infrastructure.csproj", "{2AB0EDA5-C360-48B3-A536-0337279126A8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Forum.Web", "src\Forum.Web\Forum.Web.csproj", "{ED638DD5-E755-4B7A-940D-5C94AB425686}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -13,15 +15,20 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{35460AA4-B94A-4B64-9418-7243EC3D2F01}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{35460AA4-B94A-4B64-9418-7243EC3D2F01}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{35460AA4-B94A-4B64-9418-7243EC3D2F01}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{35460AA4-B94A-4B64-9418-7243EC3D2F01}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2AB0EDA5-C360-48B3-A536-0337279126A8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2AB0EDA5-C360-48B3-A536-0337279126A8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2AB0EDA5-C360-48B3-A536-0337279126A8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2AB0EDA5-C360-48B3-A536-0337279126A8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ED638DD5-E755-4B7A-940D-5C94AB425686}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ED638DD5-E755-4B7A-940D-5C94AB425686}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ED638DD5-E755-4B7A-940D-5C94AB425686}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ED638DD5-E755-4B7A-940D-5C94AB425686}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
-		{35460AA4-B94A-4B64-9418-7243EC3D2F01} = {C02CDF38-010A-4CEA-B3F3-741F1A314AFA}
+		{2AB0EDA5-C360-48B3-A536-0337279126A8} = {C02CDF38-010A-4CEA-B3F3-741F1A314AFA}
+		{ED638DD5-E755-4B7A-940D-5C94AB425686} = {C02CDF38-010A-4CEA-B3F3-741F1A314AFA}
 	EndGlobalSection
 EndGlobal
