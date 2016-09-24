@@ -6,12 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
 
     <title>Forum App</title>
-    
-    <link rel="stylesheet" href="/Content/css/app.css" />
-    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.4/semantic.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/simplemde/latest/simplemde.min.css">    
 
-    <script src="https://cdn.jsdelivr.net/simplemde/latest/simplemde.min.js"></script>  
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.4/semantic.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/simplemde/latest/simplemde.min.css">
+    <link rel="stylesheet" href="/Content/css/app.css" />
+    <script src="https://cdn.jsdelivr.net/simplemde/latest/simplemde.min.js"></script>
+
 </head>
 <body>
     <div class="ui secondary inverted selection fixed menu">
@@ -19,27 +19,28 @@
             <div class="header item">
                 Forum App
             </div>
-            <div class="right menu">
-                <a class="item">Sign Up</a>
-                <a class="item">Log Out</a>
-            </div>
         </div>
     </div>
 
     <div class="app-head">
         <div class="ui container">
             <h1 class="ui inverted header">
-                Imagine-a-Company
+                What is your question ?
             </h1>
-            <h2>Do whatever you want when you want to.</h2>
-            <div class="ui huge primary button">Get Started <i class="right arrow icon"></i></div>
+            <div class="ui huge icon input">
+                <input id="search" type="text" placeholder="Search">
+                <i class="search icon"></i>
+            </div>
         </div>
     </div>
 
     <div class="ui container app-container">
         @Section['Content']
     </div>
-
-
+   
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.4/semantic.js"></script>
+    <!--<script src="/Content/js/app.js"></script>-->
+    @Section['Scripts']
 </body>
 </html>

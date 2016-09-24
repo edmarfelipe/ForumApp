@@ -4,7 +4,7 @@
 
 <h3>New</h3>
 
-<form action="/Topic/Save" method="post" class="ui form">
+<form action="/@ViewBag.CategorySlug/Save" method="post" class="ui form">
     <div class="field">
         <input type="text" name="title">
     </div>
@@ -13,8 +13,8 @@
         <textarea id="newTopic" name="content"></textarea>
     </div>
 
-    <input type="hidden" name="CategoryID" value="@ViewBag.CategorySlug" />
     <button class="ui submit button">Submit</button>
+    <a class="ui submit button" href="/@ViewBag.CategorySlug">Cancel</a>
 </form>
 
 

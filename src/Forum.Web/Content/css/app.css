@@ -5,22 +5,43 @@
     color: #fff;
 }
 
+    .app-head .app-container {
+        padding-top: 40px;
+    }
+
+    .app-head input {
+        width: 480px;
+    }
+
+    .app-head .header {
+        margin-bottom: 40px;
+    }
+
+
 .app-menu {
     height: 55px;
 }
 
-    .app-menu .header  {
+    .app-menu .header {
         margin-left: 0;
         padding-left: 0;
     }
 
-    .app-container {
-      padding: 50px;
-      max-width: 80%;
-      margin: 0 auto;
-    }
+.app-container {
+    padding: 50px;
+    max-width: 80%;
+    margin: 0 auto;
+}
 
-    .app-container-header {
-      margin-bottom: 50px !important;
-    }
-   
+.app-container-header {
+    margin-bottom: 50px !important;
+}
+
+.ui.very.relaxed.horizontal.list > .item {
+    width: 170px;
+    padding-left: 40px !important;
+    margin-left: 10px !important;
+    padding-right: 0;
+    margin-right: 0;
+    padding-bottom: 20px;
+}

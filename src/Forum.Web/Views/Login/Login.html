@@ -1,0 +1,28 @@
+﻿@Master['Master']
+
+@Section['Content']
+<div class="app-container">
+    <div class="ui two column centered grid">
+        <div class="column">
+            <form action="/login" method="post">
+                <div class="ui fluid input">
+                    <input type="email" name="Email" placeholder="User">
+                </div>
+
+                <div class="ui fluid input">
+                    <input type="password" name="password" placeholder="Password">
+                </div>
+
+                <button class="ui basic fluid button">Log in</button>
+            </form>
+
+            @If.Errored
+                <div class="ui red message">
+                   User or password not valid.
+                </div>
+            @EndIf
+
+        </div>
+    </div>
+</div>
+@EndSection

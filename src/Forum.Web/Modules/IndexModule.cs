@@ -1,21 +1,28 @@
-﻿using Forum.Infrastructure.Models;
-using Forum.Infrastructure.Repositories;
+﻿using Forum.Commum.Interfaces.Repositories;
 using Nancy;
 
-namespace ForumApp
+namespace Forum.Web.Modules
 {
-    public class HomeModule : NancyModule
+    public class HomeModule : SecureModule
     {
-		public HomeModule()
+        public HomeModule(ICategoryRepository categoryRepository, ITopicRepository topicRepository)
         {
-            Get["/", true] = async (x, ct) =>
-            {
-                var categoryRepository = new CategoryRepository();
+            Get("/", async _ =>
+            {            
+                if (Request.Query.s.HasValue)
+                {
+                    var query = Request.Query.s.Value;
+
+                    var categoriesResult = await topicRepository.Search(query);
+
+                    return View["Search", categoriesResult];
+                }
 
                 var categories = await categoryRepository.GetAll();
 
                 return View["Index", categories];
-            };
+            });
+
         }
     }
 }

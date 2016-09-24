@@ -1,5 +1,45 @@
 ﻿@Master['Master']
 
 @Section['Content']
-   Topic @Model.Id
+<div class="ui divided items">
+   
+    <a class="ui green basic button" href="/@ViewBag.CategorySlug/New">New Topic</a>
+
+    <div class="ui hidden divider"></div>
+
+    @Each
+    <div class="item">
+        <div class="middle aligned content">
+            <h3><a href="/@ViewBag.CategorySlug/@Current.Slug">@Current.Title</a></h3>
+        </div>
+
+        <div data-slug="@Current.Slug">
+            <div class="ui heart rating huge" data-max-rating="1" data-rating="@Current.Heart"></div>
+
+            <span id="hearts">@Current.Hearts</span>
+        </div>
+    </div>
+    @EndEach
+</div>
+@EndSection
+
+@Section['Scripts']
+<script>
+    $(document).ready(function () {
+        $('.ui .rating').rating({ initialRating: 0, maxRating: 1 });
+        $('.ui .rating').rating('setting', 'onRate', function (value) {
+            var father = $(this).parent();
+            var hears = father.find('#hearts');
+
+            $.post(father.data('slug'));
+
+            if (value < 100) {
+                hears.text(value);
+            }
+            else {
+                hears.text("99+");
+            }
+        });
+    });
+</script>
 @EndSection

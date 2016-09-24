@@ -2,19 +2,22 @@
 
 namespace Forum.Infrastructure.Repositories
 {
-    public class BaseRespository<T> 
+    public class BaseRespository
     {
         private const string _connectionString = "mongodb://localhost:27017";
         private const string _dataBaseName = "ForumApp";
 
-        protected readonly IMongoCollection<T> Collection;
+        private readonly IMongoDatabase dataBase;
 
         public BaseRespository()
         {
             var client = new MongoClient(_connectionString);
-            var database = client.GetDatabase(_dataBaseName);
+            dataBase = client.GetDatabase(_dataBaseName);
+        }
 
-            Collection = database.GetCollection<T>(typeof(T).Name);
+        protected IMongoCollection<T> GetCollection<T>()
+        {
+            return dataBase.GetCollection<T>(typeof(T).Name);
         }
     }
 }
